@@ -62,7 +62,7 @@ Uint8List _doCrop(
   required Size size,
 }) {
   return Uint8List.fromList(
-    encodePng(
+    encodeJpg(
       copyCrop(
         original,
         x: topLeft.dx.toInt(),
@@ -86,7 +86,7 @@ Uint8List _doCropCircle(
     topLeft.dy + size.height / 2,
   );
   return Uint8List.fromList(
-    encodePng(
+    encodeJpg(
       copyCropCircle(
         original,
         centerX: center.xi,
