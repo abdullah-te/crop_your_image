@@ -70,6 +70,7 @@ Uint8List _doCrop(
         width: size.width.toInt(),
         height: size.height.toInt(),
       ),
+      quality: 50,
     ),
   );
 }
@@ -93,6 +94,7 @@ Uint8List _doCropCircle(
         centerY: center.yi,
         radius: min(size.width, size.height) ~/ 2,
       ),
+      quality: 50,
     ),
   );
 }
